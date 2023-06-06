@@ -1,0 +1,174 @@
+body{
+    width: 100%;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+a{
+    font-family: 'Bruno Ace SC', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+
+
+header{
+    background-image: url(img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img{
+    width: 180px;
+    
+}
+
+.nav a{
+    display: inline-block;
+    margin-left: 40px;
+    padding: 10px 20px;
+    text-shadow: 40px 35px 9px black;
+    transition: 0.5s;
+}
+
+.nav a:hover{
+    color: aqua;
+    transform: translate(3px, 2px);
+    text-shadow: 35px 30px 6px black;
+
+}
+
+.nav a:active{
+    color: aqua;
+    transform: translate(5px, 4px);
+    text-shadow: 30px 25px 4px black;
+
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me{
+    text-align: justify;
+    
+}
+
+.btn{
+    position: relative;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.btn a{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.btn a:hover{
+  transform: translate(3px, 2px);
+}
+
+.btn a:active{
+  transform: translate(5px, 4px);
+}
+
+.gallery {
+    margin: 100px auto 0;
+    width: 800px;
+}
+.gallery a {
+    display: inline-block;
+    height: 135px;
+    position: relative;
+    width: 180px;
+    /* CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.gallery a img {
+    border: 8px solid #fff;
+    border-bottom: 20px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* CSS3 transition rules */
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+
+.gallery a:focus img {
+    cursor: default;
+    height: auto;
+    left: -150px;
+    top: -100px;
+    position: absolute;
+    width: 300%;
+    z-index: 100;
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+
+}
